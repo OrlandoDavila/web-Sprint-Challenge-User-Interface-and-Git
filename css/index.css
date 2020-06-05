@@ -334,11 +334,18 @@ nav a:hover {
     border: 2px solid black;
   }
   
-  .mainBox button:hover {
-    font-size: 110%;
-    background-color: lightcyan;
+  .mainBox button {
+    animation: pulse 7s infinite;
   }
   
+  @keyframes pulse {
+    0% {
+      background-color: rgb(255, 255, 255);
+    }
+    100% {
+      background-color: rgb(42, 187, 91);
+    }
+  }
   
   .about {
     margin: 8px 24px 30px 24px;
